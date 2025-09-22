@@ -1,7 +1,5 @@
 #ifndef UTILS_H
 #define UTILS_H
-
-// utils.h - small portable helpers (header-only, safe to include in many .cpp)
 #include <iostream>
 #include <string>
 #include <cstring>
