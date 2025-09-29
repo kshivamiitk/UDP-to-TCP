@@ -1,6 +1,6 @@
-#include "structureFiles/utils.h"
-#include "structureFiles/handshake.h"
-#include "structureFiles/checksum.h"
+#include "include/utils.h"
+#include "include/handshake.h"
+#include "include/checksum.h"
 
 int main(){
     SOCKET server_socket;

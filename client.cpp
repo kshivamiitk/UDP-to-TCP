@@ -1,6 +1,6 @@
-#include "structureFiles/utils.h"
-#include"structureFiles/handshake.h"
-#include"structureFiles/checksum.h"
+#include  "include/utils.h"
+#include "include/handshake.h"
+#include "include/checksum.h"
 int main() {
 
     SOCKET client_socket;
@@ -22,6 +22,8 @@ int main() {
         log_message("CLIENT" , "Closing connection.");
     } else {
         log_message("CLIENT" , "Handshake failed. Could not connect to server.");
+        closesocket(client_socket);
+        return 1;
     }
 
     closesocket(client_socket);

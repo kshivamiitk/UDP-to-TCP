@@ -1,5 +1,5 @@
-#include "/Users/kumarshivam/Documents/ACADEMICS SEVENTH SEMESTER/UGP COMPUTER NETWORKS/UDP_TO_TCP/structureFiles/utils.h"
-#include "/Users/kumarshivam/Documents/ACADEMICS SEVENTH SEMESTER/UGP COMPUTER NETWORKS/UDP_TO_TCP/structureFiles/checksum.h"
+#include "../include/utils.h"
+#include "../include/checksum.h"
 
 
 bool perform_handshake(SOCKET client_socket, sockaddr_in&server_address){
