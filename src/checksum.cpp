@@ -1,34 +1,39 @@
-#include "../include/utils.h"
+#include "../include/checksum.h"
+#include <cstdint>
+#include <cstddef>
 
-uint16_t calculate_checksum(const void* data, size_t length) {
-    const uint16_t* buf = reinterpret_cast<const uint16_t*>(data);
+uint16_t calculate_checksum(const void *data, size_t length) {
+    const uint8_t *bytes = reinterpret_cast<const uint8_t*>(data);
     uint32_t sum = 0;
     size_t i = 0;
-    for (i = 0; i < length / 2; ++i) {
-        sum += buf[i];
+    while (i + 1 < length) {
+        uint16_t w = (uint16_t(bytes[i]) << 8) | uint16_t(bytes[i + 1]);
+        sum += w;
+        if (sum & 0x10000) sum = (sum & 0xffff) + 1;
+        i += 2;
     }
-    if (length % 2 == 1) {
-        sum += *reinterpret_cast<const uint8_t*>(&buf[i]);
+    if (i < length) {
+        uint16_t w = (uint16_t(bytes[i]) << 8);
+        sum += w;
+        if (sum & 0x10000) sum = (sum & 0xffff) + 1;
     }
-    while (sum >> 16) {
-        sum = (sum & 0xFFFF) + (sum >> 16);
-    }
-    return static_cast<uint16_t>(~sum);
+    return static_cast<uint16_t>(~(sum & 0xffff));
 }
 
-bool verify_checksum(const void* data, size_t length) {
-    const uint16_t* buf = reinterpret_cast<const uint16_t*>(data);
+bool verify_checksum_buffer(const void *data, size_t length) {
+    const uint8_t *bytes = reinterpret_cast<const uint8_t*>(data);
     uint32_t sum = 0;
     size_t i = 0;
-
-    for (i = 0; i < length / 2; ++i) {
-        sum += buf[i];
+    while (i + 1 < length) {
+        uint16_t w = (uint16_t(bytes[i]) << 8) | uint16_t(bytes[i + 1]);
+        sum += w;
+        if (sum & 0x10000) sum = (sum & 0xffff) + 1;
+        i += 2;
     }
-    if (length % 2 == 1) {
-        sum += *reinterpret_cast<const uint8_t*>(&buf[i]);
+    if (i < length) {
+        uint16_t w = (uint16_t(bytes[i]) << 8);
+        sum += w;
+        if (sum & 0x10000) sum = (sum & 0xffff) + 1;
     }
-    while (sum >> 16) {
-        sum = (sum & 0xFFFF) + (sum >> 16);
-    }
-    return static_cast<uint16_t>(sum) == 0xFFFF;
+    return static_cast<uint16_t>(sum & 0xffff) == 0xffff;
 }
