@@ -17,7 +17,7 @@
 
 2. three-way handshake `done`
 
-3. reliable-data share `undergoing`
+3. reliable-data share `done`
 
 4. per-segment timers
 
