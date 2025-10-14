@@ -19,10 +19,8 @@
 
 3. reliable-data share `done`
 
-4. per-segment timers
+4. congestion control `done`
 
 5. RTT estimation 
 
 6. flow control 
-
-7. congestion control
