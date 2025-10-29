@@ -1,4 +1,3 @@
-
 #pragma once
 #ifndef CONGESTION_H
 #define CONGESTION_H
@@ -13,10 +12,17 @@ struct CongestionControl {
     CongestionControl(u32 init_cwnd = 4, u32 init_ssthresh = 32) : cwnd(init_cwnd), ssthresh(init_ssthresh), dupAcks(0), inFastRec(false) {}
     inline void onPacketSent() {}
     inline void onNewAck(u32 newSegsAcked) {
-        if (inFastRec) { cwnd = std::max<u32>(ssthresh, 1); inFastRec = false; dupAcks = 0; }
+        if (inFastRec) { 
+            cwnd = std::max<u32>(ssthresh, 1); 
+            inFastRec = false; 
+            dupAcks = 0; 
+        }
         if (newSegsAcked == 0) return;
         if (cwnd < ssthresh) cwnd += newSegsAcked;
-        else { u32 inc = (newSegsAcked >= cwnd) ? 1u : 0u; cwnd += inc; }
+        else { 
+            u32 inc = (newSegsAcked >= cwnd) ? 1u : 0u; 
+            cwnd += inc; 
+        }
     }
     inline bool onDupAck() {
         if (inFastRec) { 
