@@ -10,6 +10,8 @@ chmod +x compile_client&server.sh
 ./compile_client&server.sh
 ```
 
+Or if want to run manually :- 
+
 ```bash
 ./server <output_file> [port]
 
