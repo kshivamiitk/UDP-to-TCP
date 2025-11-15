@@ -13,7 +13,7 @@ void check(bool condition, const std::string &message) {
         std::cout << "[PASS] " << message << '\n';
     }
 }
-} // namespace
+}
 
 int main() {
     using u32 = CongestionControl::u32;

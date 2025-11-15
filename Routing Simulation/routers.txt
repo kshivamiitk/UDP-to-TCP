@@ -1,0 +1,33 @@
+# routers (declared)
+Router R0
+Router R1
+Router R2
+Router R3
+Router R4
+Router R5
+Router R6
+Router R7
+Router R8
+Router R9
+
+# backbone chain edges (R0-R1-R2-...-R99)
+R0 R1 1
+R1 R2 1
+R2 R3 1
+R3 R4 1
+R4 R5 1
+R5 R6 1
+R6 R7 1
+R7 R8 1
+R8 R9 1
+
+# extra cross links to create a dense-ish topology
+R0 R1 2
+R0 R5 2
+R1 R4 3
+R1 R6 3
+R2 R7 4
+R3 R8 5
+R4 R9 6
+R5 R6 2
+R6 R9 3

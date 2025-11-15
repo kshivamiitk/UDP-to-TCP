@@ -1,0 +1,43 @@
+
+# Delivered packet from host1.txt via routers:
+#   At router: R1 (hop 1)
+#     Forwarding to next router: R6
+#   At router: R6 (hop 2)
+#     Forwarding to next router: R7
+#   At router: R7 (hop 3)
+#     Forwarding to next router: R8
+#   At router: R8 (hop 4)
+#     Destination host is attached here. Delivering payload to host8.txt
+# Delivered at: Sat Nov  8 10:05:47 2025
+# host file for 10.0.0.2
+hello there
+# EndPacket
+
+# Delivered packet from host1.txt via routers:
+#   At router: R1 (hop 1)
+#     Forwarding to next router: R6
+#   At router: R6 (hop 2)
+#     Forwarding to next router: R7
+#   At router: R7 (hop 3)
+#     Forwarding to next router: R8
+#   At router: R8 (hop 4)
+#     Destination host is attached here. Delivering payload to host8.txt
+# Delivered at: Sat Nov  8 10:06:01 2025
+# host file for 10.0.0.2
+hello there
+# EndPacket
+
+# Delivered packet from host1.txt via routers:
+#   At router: R1 (hop 1)
+#     Forwarding to next router: R6
+#   At router: R6 (hop 2)
+#     Forwarding to next router: R7
+#   At router: R7 (hop 3)
+#     Forwarding to next router: R8
+#   At router: R8 (hop 4)
+#     Destination host is attached here. Delivering payload to host8.txt
+# Delivered at: Sat Nov  8 10:07:07 2025
+# host file for 10.0.0.2
+hello there networks
+
+# EndPacket

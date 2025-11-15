@@ -39,6 +39,7 @@ bool perform_handshake(SOCKET s, const sockaddr_in& server) {
     }
     return false;
 }
+
 bool handle_handshake(SOCKET s) {
     uint8_t flags; uint32_t rseq, rack; uint16_t rwnd; std::vector<uint8_t> rpayload;
 

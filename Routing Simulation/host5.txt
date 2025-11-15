@@ -1,0 +1,1 @@
+# host file for 10.0.0.6

@@ -1,0 +1,85 @@
+# host file for 10.0.0.10
+
+# Delivered packet from host0.txt via routers:
+#   At router: R0 (hop 1)
+#     Forwarding to next router: R5
+#   At router: R5 (hop 2)
+#     Forwarding to next router: R6
+#   At router: R6 (hop 3)
+#     Forwarding to next router: R9
+#   At router: R9 (hop 4)
+#     Destination host is attached here. Delivering payload to host9.txt
+# Delivered at: Fri Nov  7 22:53:56 2025
+# host file for 10.0.0.1
+
+# EndPacket
+
+# Delivered packet from host0.txt via routers:
+#   At router: R0 (hop 1)
+#     Forwarding to next router: R5
+#   At router: R5 (hop 2)
+#     Forwarding to next router: R6
+#   At router: R6 (hop 3)
+#     Forwarding to next router: R9
+#   At router: R9 (hop 4)
+#     Destination host is attached here. Delivering payload to host9.txt
+# Delivered at: Fri Nov  7 22:54:30 2025
+# host file for 10.0.0.1
+
+# EndPacket
+
+# Delivered packet from host0.txt via routers:
+#   At router: R0 (hop 1)
+#     Forwarding to next router: R5
+#   At router: R5 (hop 2)
+#     Forwarding to next router: R6
+#   At router: R6 (hop 3)
+#     Forwarding to next router: R9
+#   At router: R9 (hop 4)
+#     Destination host is attached here. Delivering payload to host9.txt
+# Delivered at: Fri Nov  7 22:54:45 2025
+# host file for 10.0.0.1
+hello world
+# EndPacket
+
+# Delivered packet from host0.txt via routers:
+#   At router: R0 (hop 1)
+#     Forwarding to next router: R5
+#   At router: R5 (hop 2)
+#     Forwarding to next router: R6
+#   At router: R6 (hop 3)
+#     Forwarding to next router: R9
+#   At router: R9 (hop 4)
+#     Destination host is attached here. Delivering payload to host9.txt
+# Delivered at: Fri Nov  7 23:04:42 2025
+# host file for 10.0.0.1
+hello world
+# EndPacket
+
+# Delivered packet from host0.txt via routers:
+#   At router: R0 (hop 1)
+#     Forwarding to next router: R5
+#   At router: R5 (hop 2)
+#     Forwarding to next router: R6
+#   At router: R6 (hop 3)
+#     Forwarding to next router: R9
+#   At router: R9 (hop 4)
+#     Destination host is attached here. Delivering payload to host9.txt
+# Delivered at: Fri Nov  7 23:05:12 2025
+# host file for 10.0.0.1
+hello world
+# EndPacket
+
+# Delivered packet from host0.txt via routers:
+#   At router: R0 (hop 1)
+#     Forwarding to next router: R5
+#   At router: R5 (hop 2)
+#     Forwarding to next router: R6
+#   At router: R6 (hop 3)
+#     Forwarding to next router: R9
+#   At router: R9 (hop 4)
+#     Destination host is attached here. Delivering payload to host9.txt
+# Delivered at: Fri Nov  7 23:06:50 2025
+# host file for 10.0.0.1
+hello world1
+# EndPacket

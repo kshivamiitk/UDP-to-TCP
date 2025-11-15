@@ -1,0 +1,11 @@
+# host file for 10.0.0.8
+
+# Delivered packet from host2.txt via routers:
+#   At router: R2 (hop 1)
+#     Forwarding to next router: R7
+#   At router: R7 (hop 2)
+#     Destination host is attached here. Delivering payload to host7.txt
+# Delivered at: Sat Nov  8 10:57:11 2025
+# host file for 10.0.0.3
+hello this is presentation of UGP
+# EndPacket

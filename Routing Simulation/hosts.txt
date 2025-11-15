@@ -1,0 +1,11 @@
+# hosts: <filename> <ip> <attachedRouter>
+host0.txt 10.0.0.1 R0
+host1.txt 10.0.0.2 R1
+host2.txt 10.0.0.3 R2
+host3.txt 10.0.0.4 R3
+host4.txt 10.0.0.5 R4
+host5.txt 10.0.0.6 R5
+host6.txt 10.0.0.7 R6
+host7.txt 10.0.0.8 R7
+host8.txt 10.0.0.9 R8
+host9.txt 10.0.0.10 R9
